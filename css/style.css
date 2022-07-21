@@ -1,0 +1,1198 @@
+@font-face {
+  font-family: "Gilroy-EB";
+  src: url("../font/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../font/Gilroy-Light.otf");
+}
+
+html,
+body {
+  color: rgba(255, 255, 255);
+  line-height: 1.4;
+  margin: 0;
+  position: relative;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  background-color: #000;
+}
+
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:-webkit-any-link:focus-visible {
+  outline-offset: 0px;
+}
+
+:focus-visible {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+}
+
+.form-control:focus {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+}
+
+.btn:focus,
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+}
+
+a {
+  color: inherit;
+}
+
+.row {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.container-fluid {
+  max-width: 1920px;
+}
+
+.container {
+  padding: 0;
+}
+
+/* Header Navbar CSS */
+
+.header .navbar {
+  padding: 35px 0 0;
+}
+
+.navbar.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding-bottom: 21px;
+  -webkit-box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);
+  box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);
+  background-color: rgb(0 0 0 / 80%) !important;
+  -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+.navbar.is-sticky a.navbar-brand img {
+  width: 60px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  text-align: left;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 300;
+  font-family: Gilroy-Light;
+  letter-spacing: 0px;
+  color: #ffffff;
+  padding: 0 30px 0 0;
+  text-transform: uppercase;
+}
+
+#main-nav .navbar-nav .nav-link.active,
+#main-nav .navbar-nav .nav-link:hover {
+  color: #e600ff;
+}
+
+.header-navbtn {
+  display: block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.header-navbtn:before,
+.header-navbtn:after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 6px;
+  width: 20px;
+  height: 2px;
+  background: linear-gradient(99deg, #e600ff 0%, #2e2cf3 100%);
+  border-radius: 2px;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.header-navbtn:before {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+.header-navbtn:after {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+.header-navbtn.active:before {
+  -webkit-transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg);
+}
+
+.header-navbtn.active:after {
+  -webkit-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.btn-primary-club,
+.btn-primary-club {
+  background: transparent linear-gradient(99deg, #e600ff 0%, #2e2cf3 100%) 0% 0%
+    no-repeat;
+  border-radius: 100px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  font-family: Gilroy-EB;
+  letter-spacing: 0px;
+  color: #ffffff;
+  padding: 0 30px 0 0;
+  padding: 18px 55px;
+  text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.btn-primary-club:hover,
+.btn-primary-club:hover {
+  color: #ffffff !important;
+}
+
+/* End Header Navbar CSS */
+
+/* Main Wrapper CSS */
+
+.main-banner {
+  background: transparent url("../img/group157.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-banner-content {
+  padding-bottom: 75px;
+}
+
+.banner-content-text {
+  padding-top: 120px;
+}
+
+.banner-content-text h1 {
+  text-align: left;
+  font-size: 66px;
+  line-height: 81px;
+  font-weight: 800;
+  font-family: Gilroy-EB;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 29px;
+}
+
+.banner-content-text h3 {
+  text-align: left;
+  font-size: 35px;
+  line-height: 48px;
+  font-weight: 300;
+  font-family: Gilroy-Light;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.banner-content-text .btn-primary-club {
+  margin-top: 51px;
+  border: 0px;
+}
+
+.banner-img-content {
+  padding-top: 60px;
+}
+
+.banner-item-img.items2 {
+  padding-top: 52px;
+}
+
+.banner-item-img .img-items {
+  padding-right: 16px;
+  padding-bottom: 14px;
+}
+
+/* End Main Wrapper CSS */
+
+/* Main About CSS */
+
+.about {
+  background: transparent url("../img/group176.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-content-img {
+  padding: 229px 98px 229px 0;
+}
+
+.about-content-text {
+  padding: 166px 0;
+}
+
+.about-content-text h2 {
+  text-align: left;
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 800;
+  font-style: normal;
+  font-family: Gilroy-EB;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.about-content-text p {
+  text-align: left;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+  font-family: Gilroy-Light;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 54px;
+}
+
+/* End Main About CSS */
+
+/* Main Gallery CSS */
+
+.main-gallery {
+  background: transparent url("../img/group177.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 83px 0 128px;
+}
+
+.gallery-title h2,
+.team-title h2,
+.faq-title h2 {
+  text-align: center;
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 800;
+  font-family: Gilroy-EB;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 99px;
+}
+
+/* End Main Gallery CSS */
+
+/* Main Road Map CSS */
+
+.main-roadmap {
+  background: transparent url("../img/group179.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 90px 0 140px;
+}
+
+.main-roadmap .roadmap-items {
+  position: relative;
+}
+
+.main-roadmap .roadmap-items:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  background: transparent linear-gradient(99deg, #e600ff 0%, #2e2cf3 100%) 0% 0%
+    no-repeat;
+  width: 6px;
+  height: 90%;
+  z-index: 1;
+}
+
+.title-items {
+  z-index: 99;
+}
+
+.roadmap-title .road-title {
+  background: transparent url("../img/group178.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 276px;
+  height: 280px;
+  width: 276px;
+  margin: 0 auto;
+}
+
+.roadmap-title .road-title h3 {
+  text-align: left;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 800;
+  font-family: Gilroy-EB;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.roadmap-item.item1 {
+  padding-top: 34px;
+  position: relative;
+}
+
+.roadmap-item.item1 .item-detail,
+.roadmap-item.item2 .item-detail,
+.roadmap-item.item3 .item-detail,
+.roadmap-item.item4 .item-detail,
+.roadmap-item.item5 .item-detail {
+  position: relative;
+}
+
+.roadmap-item.item1 .item-detail:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -56px;
+  background: #fe9700;
+  border-radius: 100px;
+  height: 6px;
+  width: calc(40px + 20px);
+}
+
+.item-detail p {
+  background: #7153d9;
+  border: 5px solid #fe9700;
+  border-radius: 25px;
+  padding: 30px 25px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  font-family: Gilroy-Light;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.roadmap-item.item2 .item-detail {
+  margin-top: -90px;
+}
+
+.roadmap-item.item4 .item-detail {
+  margin-top: -50px;
+}
+
+.roadmap-item.item2 .item-detail p {
+  background: #4526b1;
+  border: 5px solid #25c5d9;
+}
+
+.roadmap-item.item3 .item-detail p {
+  background: #4526b1;
+  border: 5px solid #42a4f5;
+  border-radius: 25px;
+}
+
+.roadmap-item.item4 .item-detail p {
+  background: #4526b1;
+  border: 5px solid #eb407a;
+}
+
+.roadmap-item.item5 .item-detail p {
+  background: #7153d9;
+  border: 5px solid #673bb6;
+}
+
+.roadmap-item.item2 .item-detail:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -56px;
+  background: #25c5d9;
+  border-radius: 100px;
+  height: 6px;
+  width: calc(40px + 20px);
+}
+
+.roadmap-item.item3 .item-detail:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -56px;
+  background: #42a4f5;
+  border-radius: 100px;
+  height: 6px;
+  width: calc(40px + 20px);
+}
+
+.roadmap-item.item4 .item-detail:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -56px;
+  background: #eb407a;
+  border-radius: 100px;
+  height: 6px;
+  width: calc(40px + 20px);
+}
+
+.roadmap-item.item5 .item-detail:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -56px;
+  background: #673bb6;
+  border-radius: 100px;
+  height: 6px;
+  width: calc(40px + 20px);
+}
+
+.roadmap-item.item1 .raodmap-title.title-items {
+  padding-left: 13px;
+  padding-top: 137px;
+}
+
+.roadmap-item.item3 .raodmap-title.title-items {
+  padding-top: 42px;
+}
+
+.roadmap-item.item5 .raodmap-title.title-items {
+  padding-top: 60px;
+}
+
+.raodmap-title .road-title2 {
+  background: transparent url("../img/group131.png") no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 139px;
+  height: 142px;
+  margin: 0 auto;
+}
+
+.raodmap-title .road-title2 h3 {
+  padding-top: 7px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 800;
+  font-family: Gilroy-EB;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+/* End Main Road Map CSS */
+
+/* Main Team CSS */
+
+.main-team {
+  background: transparent url("../img/group183.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 79px 0 165px;
+}
+
+.team-content {
+  padding-bottom: 68px;
+}
+
+.team-content:last-child {
+  padding-bottom: 0;
+}
+
+.team-title h2 {
+  margin-bottom: 68px;
+}
+
+.team-img {
+  position: relative;
+}
+
+.team-detail-content {
+  padding: 65px 0 0 85px;
+}
+
+.team-img p {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+
+.team-img p,
+.team-detail-content p,
+.team-detail-content p a {
+  text-align: left;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+  font-family: Gilroy-Light;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.team-detail-content ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+  padding-top: 41px;
+}
+
+.team-detail-content ul li {
+  background: linear-gradient(
+    135deg,
+    rgba(230, 0, 255, 1) 0%,
+    rgba(46, 44, 243, 1) 80%
+  );
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.team-detail-content ul li:last-child {
+  margin-right: 0;
+}
+
+/* End Main Team CSS */
+
+/* Main FAQ CSS */
+
+.main-faq {
+  background: transparent url("../img/group184.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 59px 0 105px;
+}
+
+.faq-title h2 {
+  margin-bottom: 76px;
+}
+
+.accordion-item {
+  background: transparent;
+  border: 0px;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  background: #4526b1;
+  border-radius: 15px;
+  text-align: left;
+  font-size: 20px;
+  font-family: Gilroy-EB;
+  line-height: 29px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.accordion-button:not(.collapsed) {
+  margin-bottom: 0;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-body {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Gilroy-Light;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+/* End Main FAQ CSS */
+
+/* Main Footer CSS */
+
+.main-footer {
+  background: transparent linear-gradient(0deg, #200b6a 0%, #100635 100%);
+  padding: 183px 0 37px;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  font-family: Gilroy-Light;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-top: 37px;
+  margin-bottom: 38px;
+}
+
+.footer-content ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 45px;
+  justify-content: center;
+}
+
+.footer-content ul li {
+  background: linear-gradient(
+    135deg,
+    rgba(230, 0, 255, 1) 0%,
+    rgba(46, 44, 243, 1) 80%
+  );
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.footer-content ul li svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.main-footer hr {
+  width: 100%;
+}
+
+.footer-copy-right {
+  padding-top: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copy-right p,
+.footer-copy-right ul li {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  font-family: Gilroy-Light;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.footer-copy-right ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.footer-copy-right ul li {
+  margin-right: 31px;
+}
+
+.footer-copy-right ul li:last-child {
+  margin-right: 0;
+}
+
+/* End Main Footer CSS */
+
+/* Main Go Top CSS */
+
+.go-top {
+  position: fixed;
+  cursor: pointer;
+  top: 0;
+  right: 15px;
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    rgba(230, 0, 255, 1) 0%,
+    rgba(46, 44, 243, 1) 80%
+  );
+  z-index: 4;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  border-radius: 50%;
+  border: 1px solid
+    linear-gradient(135deg, rgba(230, 0, 255, 1) 0%, rgba(46, 44, 243, 1) 80%);
+}
+
+.go-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #000000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.go-top:hover::before,
+.go-top:focus::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-top .fa-chevron-up::after,
+.go-top .fa-chevron-up::before {
+  content: "";
+  top: 1.1rem;
+  position: absolute;
+  width: 0.5rem;
+  height: 0.1rem;
+  background-color: #ffffff;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.go-top .fa-chevron-up::before {
+  right: 13px;
+  transform: rotate(45deg);
+}
+
+.go-top .fa-chevron-up::after {
+  right: 17px;
+  transform: rotate(-45deg);
+}
+
+.go-top.active {
+  top: 98%;
+  -webkit-transform: translateY(-98%);
+  transform: translateY(-98%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-top:hover,
+.go-top:focus {
+  color: #ffffff;
+}
+
+/* End Main Go Top CSS */
+
+/* Responsiveness CSS  */
+
+@media only screen and (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1420px;
+  }
+}
+
+@media only screen and (min-width: 1420px) {
+  .banner-content-text {
+    padding-right: 120px;
+  }
+
+  .roadmap-item.item1 .raodmap-title.title-items {
+    padding-top: 105px;
+  }
+
+  .roadmap-item.item2 .title-items {
+    margin-top: -15px;
+  }
+
+  .roadmap-item.item3 .raodmap-title.title-items {
+    padding-top: 24px;
+  }
+
+  .roadmap-item.item4 .item-detail {
+    margin-top: -25px;
+  }
+
+  .roadmap-item.item5 .raodmap-title.title-items {
+    padding-top: 45px;
+  }
+
+  .accordion-body {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1150px) {
+  .navbar-expand-lg .navbar-nav .nav-link.btn-primary-club {
+    font-size: 17px;
+    padding: 18px 44px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    font-size: 17px;
+  }
+
+  .about-content-img {
+    padding: 169px 98px 169px 0;
+  }
+
+  .about-content-text {
+    padding: 106px 0;
+  }
+
+  .gallery-title h2 {
+    margin-bottom: 9px;
+  }
+
+  .roadmap-item.item1 .item-detail:after {
+    top: 44%;
+  }
+
+  .roadmap-item.item2 .item-detail {
+    margin-top: -125px;
+  }
+
+  .roadmap-item.item3 .item-detail {
+    margin-top: -20px;
+  }
+
+  .roadmap-item.item4 .item-detail {
+    margin-top: -60px;
+  }
+
+  .roadmap-item.item5 .item-detail {
+    margin-top: -30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  a.navbar-brand img {
+    width: 50%;
+  }
+
+  .navbar-nav {
+    background: rgb(0 0 0 / 60%);
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-item {
+    padding: 10px;
+  }
+
+  .banner-content-text {
+    padding-top: 60px;
+  }
+
+  .banner-content-text h1 {
+    font-size: 48px;
+    line-height: 55px;
+  }
+
+  .banner-content-text .btn-primary-club {
+    margin-top: 25px;
+  }
+
+  .main-about-content {
+    padding: 80px 0;
+  }
+
+  .about-content-img {
+    padding: 0px 0px 30px 0;
+  }
+
+  .about-content-text {
+    padding: 35px 0 0;
+  }
+
+  .main-gallery {
+    padding: 30px 0px;
+  }
+
+  .main-roadmap .roadmap-items:before {
+    height: 95%;
+  }
+
+  .roadmap-item.item1 .item-detail,
+  .roadmap-item.item2 .item-detail,
+  .roadmap-item.item3 .item-detail,
+  .roadmap-item.item4 .item-detail,
+  .roadmap-item.item5 .item-detail {
+    z-index: 99;
+  }
+
+  .roadmap-item.item1 .item-detail:after,
+  .roadmap-item.item2 .item-detail:after,
+  .roadmap-item.item3 .item-detail:after,
+  .roadmap-item.item4 .item-detail:after,
+  .roadmap-item.item5 .item-detail:after {
+    display: none;
+  }
+
+  .roadmap-item.item1 .raodmap-title.title-items {
+    padding-left: 0px;
+    padding-top: 37px;
+    padding-bottom: 34px;
+  }
+
+  .roadmap-item.item2 .raodmap-title.title-items {
+    padding-top: 40px;
+  }
+
+  .roadmap-item.item2 .item-detail {
+    margin-top: 50px;
+  }
+
+  .roadmap-item.item3 .item-detail {
+    padding-top: 40px;
+  }
+
+  .roadmap-item.item4 .raodmap-title.title-items {
+    padding-top: 40px;
+  }
+
+  .roadmap-item.item4 .item-detail {
+    margin-top: 50px;
+  }
+
+  .roadmap-item.item5 .item-detail {
+    padding-top: 40px;
+  }
+
+  .gallery-title h2,
+  .team-title h2,
+  .faq-title h2 {
+    margin-bottom: 0;
+    font-size: 34px;
+  }
+
+  .gallery-title h2 {
+    margin-bottom: 30px;
+  }
+
+  .faq-title h2 {
+    margin-bottom: 30px;
+  }
+
+  .team-title h2 {
+    margin-bottom: 30px;
+  }
+
+  .team-img {
+    text-align: center;
+  }
+
+  .team-detail-content {
+    padding: 27px 40px 0;
+  }
+  .team-img p,
+  .team-detail-content p,
+  .team-detail-content p a {
+    text-align: center;
+  }
+
+  .team-detail-content ul {
+    justify-content: center;
+  }
+
+  .accordion-button,
+  .accordion-button:not(.collapsed) {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .accordion-body {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .main-footer {
+    padding: 60px 0 37px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    padding-top: 20px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-item {
+    justify-content: center;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 24px;
+  }
+
+  .banner-img-content {
+    padding-top: 10px;
+  }
+
+  .btn-primary-club {
+    padding: 18px 48px;
+    margin-bottom: 30px;
+  }
+
+  .main-roadmap {
+    padding-bottom: 0px;
+  }
+
+  .footer-copy-right {
+    padding-top: 0px;
+    display: block;
+    justify-content: center;
+  }
+
+  .footer-copy-right ul {
+    justify-content: center;
+    padding-top: 9px;
+  }
+
+  .footer-copy-right p,
+  .footer-copy-right ul li {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .banner-content-text h1 {
+    font-size: 38px;
+  }
+
+  .banner-img-content {
+    padding-top: 0px;
+  }
+
+  .team-detail-content {
+    padding: 27px 8px 0;
+  }
+
+  .gallery-title h2,
+  .team-title h2,
+  .faq-title h2 {
+    font-size: 30px;
+  }
+
+  .item-detail p {
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .raodmap-title .road-title2 h3 {
+    line-height: 22px;
+  }
+
+  .navbar.is-sticky {
+    padding: 35px 30px 21px;
+  }
+
+  .team-img p,
+  .team-detail-content p,
+  .team-detail-content p a {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .footer-copy-right ul li {
+    margin-right: 10px;
+    line-height: 24px;
+  }
+
+  .footer-content ul li {
+    margin-right: 10px;
+  }
+}

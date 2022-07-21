@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112" height="110" viewBox="0 0 112 110">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.029" y1="0.166" x2="0.982" y2="0.774" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e600ff"/>
+      <stop offset="1" stop-color="#2e2cf3"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_143" data-name="Group 143" transform="translate(-511 -1430)">
+    <circle id="Ellipse_20" data-name="Ellipse 20" cx="52.5" cy="52.5" r="52.5" transform="translate(518 1435)" fill="url(#linear-gradient)"/>
+    <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(511 1430)" fill="rgba(255,255,255,0.45)" stroke="rgba(255,255,255,0.39)" stroke-width="1">
+      <circle cx="52.5" cy="52.5" r="52.5" stroke="none"/>
+      <circle cx="52.5" cy="52.5" r="52" fill="none"/>
+    </g>
+    <path id="Icon_awesome-google-play" data-name="Icon awesome-google-play" d="M26.083,18.981,8.2,1.053,30.951,14.112l-4.869,4.869ZM3.537,0A3.149,3.149,0,0,0,1.779,2.86V38.61a3.149,3.149,0,0,0,1.758,2.86L24.325,20.731ZM37.983,18.276l-4.772-2.763-5.322,5.225,5.322,5.225L38.08,23.2a3.25,3.25,0,0,0-.1-4.926ZM8.2,40.425,30.951,27.366,26.083,22.5Z" transform="translate(543.221 1462)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="64" viewBox="0 0 63 64">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.029" y1="0.166" x2="0.982" y2="0.774" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e600ff"/>
+      <stop offset="1" stop-color="#2e2cf3"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_83" data-name="Group 83" transform="translate(-0.428 0.286)">
+    <ellipse id="Ellipse_12" data-name="Ellipse 12" cx="31.5" cy="32" rx="31.5" ry="32" transform="translate(0.428 -0.286)" fill="url(#linear-gradient)"/>
+    <path id="Icon_awesome-youtube" data-name="Icon awesome-youtube" d="M30.86,7.849A3.826,3.826,0,0,0,28.168,5.14C25.794,4.5,16.273,4.5,16.273,4.5s-9.521,0-11.895.64A3.826,3.826,0,0,0,1.686,7.849a40.131,40.131,0,0,0-.636,7.376A40.131,40.131,0,0,0,1.686,22.6a3.769,3.769,0,0,0,2.692,2.666c2.374.64,11.895.64,11.895.64s9.521,0,11.895-.64A3.769,3.769,0,0,0,30.86,22.6a40.131,40.131,0,0,0,.636-7.376,40.131,40.131,0,0,0-.636-7.376Zm-17.7,11.9V10.7l7.957,4.527-7.957,4.527Z" transform="translate(15.6 16.907)" fill="#fff"/>
+  </g>
+</svg>

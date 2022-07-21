@@ -1,0 +1,10 @@
+<svg id="Group_82" data-name="Group 82" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="55" viewBox="0 0 56 55">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.029" y1="0.166" x2="0.982" y2="0.774" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e600ff"/>
+      <stop offset="1" stop-color="#2e2cf3"/>
+    </linearGradient>
+  </defs>
+  <ellipse id="Ellipse_12" data-name="Ellipse 12" cx="28" cy="27.5" rx="28" ry="27.5" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+  <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M25.068,9.036c.018.248.018.5.018.745,0,7.57-5.762,16.292-16.292,16.292A16.182,16.182,0,0,1,0,23.5a11.846,11.846,0,0,0,1.383.071,11.468,11.468,0,0,0,7.109-2.446,5.736,5.736,0,0,1-5.354-3.971,7.221,7.221,0,0,0,1.081.089,6.056,6.056,0,0,0,1.507-.195,5.727,5.727,0,0,1-4.592-5.62v-.071a5.767,5.767,0,0,0,2.588.727A5.735,5.735,0,0,1,1.95,4.427a16.276,16.276,0,0,0,11.807,5.992,6.464,6.464,0,0,1-.142-1.312,5.732,5.732,0,0,1,9.91-3.918,11.274,11.274,0,0,0,3.634-1.383,5.711,5.711,0,0,1-2.517,3.156,11.479,11.479,0,0,0,3.3-.886,12.309,12.309,0,0,1-2.872,2.961Z" transform="translate(14.169 12.615)" fill="#fff"/>
+</svg>
